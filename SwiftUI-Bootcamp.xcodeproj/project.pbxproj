@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		51CA7A3D2B542C1A00C06421 /* OffsetReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CA7A3C2B542C1A00C06421 /* OffsetReader.swift */; };
 		51CBF1482B53F03B00E66CC9 /* WeatherButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CBF1472B53F03B00E66CC9 /* WeatherButton.swift */; };
-		51CBF14C2B5426BB00E66CC9 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CBF14B2B5426BB00E66CC9 /* Home.swift */; };
+		51CBF14C2B5426BB00E66CC9 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CBF14B2B5426BB00E66CC9 /* WeatherView.swift */; };
 		51CBF14F2B5426E500E66CC9 /* WeatherDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CBF14E2B5426E500E66CC9 /* WeatherDay.swift */; };
 		51FBF0032B52BDDF00F6B5FE /* SwiftUI_BootcampApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FBF0022B52BDDF00F6B5FE /* SwiftUI_BootcampApp.swift */; };
 		51FBF0052B52BDDF00F6B5FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FBF0042B52BDDF00F6B5FE /* ContentView.swift */; };
@@ -40,7 +40,7 @@
 /* Begin PBXFileReference section */
 		51CA7A3C2B542C1A00C06421 /* OffsetReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetReader.swift; sourceTree = "<group>"; };
 		51CBF1472B53F03B00E66CC9 /* WeatherButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherButton.swift; sourceTree = "<group>"; };
-		51CBF14B2B5426BB00E66CC9 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		51CBF14B2B5426BB00E66CC9 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 		51CBF14E2B5426E500E66CC9 /* WeatherDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDay.swift; sourceTree = "<group>"; };
 		51FBEFFF2B52BDDF00F6B5FE /* SwiftUI-Bootcamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Bootcamp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51FBF0022B52BDDF00F6B5FE /* SwiftUI_BootcampApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_BootcampApp.swift; sourceTree = "<group>"; };
@@ -79,6 +79,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		518641C82B552AC700621435 /* Swift-WeatherApp */ = {
+			isa = PBXGroup;
+			children = (
+				51CA7A3B2B542C0800C06421 /* Helpers */,
+				51CBF14D2B5426D400E66CC9 /* Model */,
+				51CBF1492B54267E00E66CC9 /* View */,
+			);
+			path = "Swift-WeatherApp";
+			sourceTree = "<group>";
+		};
 		51CA7A3B2B542C0800C06421 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -90,7 +100,8 @@
 		51CBF1492B54267E00E66CC9 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				51CBF14B2B5426BB00E66CC9 /* Home.swift */,
+				51CBF1472B53F03B00E66CC9 /* WeatherButton.swift */,
+				51CBF14B2B5426BB00E66CC9 /* WeatherView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -126,12 +137,9 @@
 		51FBF0012B52BDDF00F6B5FE /* SwiftUI-Bootcamp */ = {
 			isa = PBXGroup;
 			children = (
-				51CA7A3B2B542C0800C06421 /* Helpers */,
-				51CBF14D2B5426D400E66CC9 /* Model */,
-				51CBF1492B54267E00E66CC9 /* View */,
+				518641C82B552AC700621435 /* Swift-WeatherApp */,
 				51FBF0022B52BDDF00F6B5FE /* SwiftUI_BootcampApp.swift */,
 				51FBF0042B52BDDF00F6B5FE /* ContentView.swift */,
-				51CBF1472B53F03B00E66CC9 /* WeatherButton.swift */,
 				51FBF0062B52BDE200F6B5FE /* Assets.xcassets */,
 				51FBF0082B52BDE200F6B5FE /* Preview Content */,
 			);
@@ -296,7 +304,7 @@
 				51FBF0052B52BDDF00F6B5FE /* ContentView.swift in Sources */,
 				51CA7A3D2B542C1A00C06421 /* OffsetReader.swift in Sources */,
 				51FBF0032B52BDDF00F6B5FE /* SwiftUI_BootcampApp.swift in Sources */,
-				51CBF14C2B5426BB00E66CC9 /* Home.swift in Sources */,
+				51CBF14C2B5426BB00E66CC9 /* WeatherView.swift in Sources */,
 				51CBF1482B53F03B00E66CC9 /* WeatherButton.swift in Sources */,
 				51CBF14F2B5426E500E66CC9 /* WeatherDay.swift in Sources */,
 			);
