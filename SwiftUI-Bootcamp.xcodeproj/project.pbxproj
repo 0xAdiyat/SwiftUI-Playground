@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		511D63E42B55614300E16CF9 /* ExperimentalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511D63E32B55614300E16CF9 /* ExperimentalView.swift */; };
+		511D63E72B55795B00E16CF9 /* FrameworkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511D63E62B55795B00E16CF9 /* FrameworkGridView.swift */; };
+		511D63EB2B5579B200E16CF9 /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511D63EA2B5579B200E16CF9 /* Framework.swift */; };
+		511D63ED2B55925B00E16CF9 /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511D63EC2B55925B00E16CF9 /* FrameworkDetailView.swift */; };
+		511D63EF2B5592E300E16CF9 /* FrameworkTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511D63EE2B5592E300E16CF9 /* FrameworkTitleView.swift */; };
+		511D63F12B5594AD00E16CF9 /* AFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511D63F02B5594AD00E16CF9 /* AFButton.swift */; };
+		511D63F42B55A21300E16CF9 /* FrameworkGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511D63F32B55A21300E16CF9 /* FrameworkGridViewModel.swift */; };
+		511D63F82B55A8B600E16CF9 /* SafariWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511D63F72B55A8B600E16CF9 /* SafariWebView.swift */; };
+		517CD59E2B5673DA0004E0B8 /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517CD59D2B5673DA0004E0B8 /* XDismissButton.swift */; };
+		517CD5AA2B5679A10004E0B8 /* FrameworkTitleViewHorizontal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517CD5A92B5679A10004E0B8 /* FrameworkTitleViewHorizontal.swift */; };
+		517CD5AE2B567A150004E0B8 /* FrameworkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517CD5AD2B567A150004E0B8 /* FrameworkList.swift */; };
+		517CD5B02B567A2C0004E0B8 /* FrameworkListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517CD5AF2B567A2C0004E0B8 /* FrameworkListViewModel.swift */; };
+		517CD5B42B567CA60004E0B8 /* FrameworkDetailListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517CD5B32B567CA60004E0B8 /* FrameworkDetailListView.swift */; };
 		51CA7A3D2B542C1A00C06421 /* OffsetReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CA7A3C2B542C1A00C06421 /* OffsetReader.swift */; };
 		51CBF1482B53F03B00E66CC9 /* WeatherButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CBF1472B53F03B00E66CC9 /* WeatherButton.swift */; };
 		51CBF14C2B5426BB00E66CC9 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CBF14B2B5426BB00E66CC9 /* WeatherView.swift */; };
@@ -38,6 +51,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		511D63E32B55614300E16CF9 /* ExperimentalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperimentalView.swift; sourceTree = "<group>"; };
+		511D63E62B55795B00E16CF9 /* FrameworkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridView.swift; sourceTree = "<group>"; };
+		511D63EA2B5579B200E16CF9 /* Framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
+		511D63EC2B55925B00E16CF9 /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
+		511D63EE2B5592E300E16CF9 /* FrameworkTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkTitleView.swift; sourceTree = "<group>"; };
+		511D63F02B5594AD00E16CF9 /* AFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFButton.swift; sourceTree = "<group>"; };
+		511D63F32B55A21300E16CF9 /* FrameworkGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridViewModel.swift; sourceTree = "<group>"; };
+		511D63F72B55A8B600E16CF9 /* SafariWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebView.swift; sourceTree = "<group>"; };
+		517CD59D2B5673DA0004E0B8 /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
+		517CD5A92B5679A10004E0B8 /* FrameworkTitleViewHorizontal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkTitleViewHorizontal.swift; sourceTree = "<group>"; };
+		517CD5AD2B567A150004E0B8 /* FrameworkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkList.swift; sourceTree = "<group>"; };
+		517CD5AF2B567A2C0004E0B8 /* FrameworkListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkListViewModel.swift; sourceTree = "<group>"; };
+		517CD5B32B567CA60004E0B8 /* FrameworkDetailListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailListView.swift; sourceTree = "<group>"; };
 		51CA7A3C2B542C1A00C06421 /* OffsetReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetReader.swift; sourceTree = "<group>"; };
 		51CBF1472B53F03B00E66CC9 /* WeatherButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherButton.swift; sourceTree = "<group>"; };
 		51CBF14B2B5426BB00E66CC9 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
@@ -79,14 +105,129 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		518641C82B552AC700621435 /* Swift-WeatherApp */ = {
+		511D63E52B55791B00E16CF9 /* Apple-Frameworks-App */ = {
+			isa = PBXGroup;
+			children = (
+				517CD5A42B56773E0004E0B8 /* UIKit Components */,
+				511D63F52B55A28100E16CF9 /* Screens */,
+				511D63E92B55799A00E16CF9 /* Views */,
+				511D63E82B55798E00E16CF9 /* Models */,
+			);
+			path = "Apple-Frameworks-App";
+			sourceTree = "<group>";
+		};
+		511D63E82B55798E00E16CF9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				511D63EA2B5579B200E16CF9 /* Framework.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		511D63E92B55799A00E16CF9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				517CD5A32B56772B0004E0B8 /* View */,
+				517CD5A22B5677070004E0B8 /* Buttons */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		511D63F22B55A1F500E16CF9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				511D63F32B55A21300E16CF9 /* FrameworkGridViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		511D63F52B55A28100E16CF9 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				517CD5AB2B5679C90004E0B8 /* FrameworkList */,
+				517CD5A02B56762C0004E0B8 /* FrameworkDetail */,
+				517CD59F2B5676130004E0B8 /* FrameworkGrid */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		517CD59F2B5676130004E0B8 /* FrameworkGrid */ = {
+			isa = PBXGroup;
+			children = (
+				511D63F22B55A1F500E16CF9 /* ViewModel */,
+				511D63E62B55795B00E16CF9 /* FrameworkGridView.swift */,
+			);
+			path = FrameworkGrid;
+			sourceTree = "<group>";
+		};
+		517CD5A02B56762C0004E0B8 /* FrameworkDetail */ = {
+			isa = PBXGroup;
+			children = (
+				511D63EC2B55925B00E16CF9 /* FrameworkDetailView.swift */,
+				517CD5B32B567CA60004E0B8 /* FrameworkDetailListView.swift */,
+			);
+			path = FrameworkDetail;
+			sourceTree = "<group>";
+		};
+		517CD5A12B5676540004E0B8 /* SafariWeb */ = {
+			isa = PBXGroup;
+			children = (
+				511D63F72B55A8B600E16CF9 /* SafariWebView.swift */,
+			);
+			path = SafariWeb;
+			sourceTree = "<group>";
+		};
+		517CD5A22B5677070004E0B8 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				511D63F02B5594AD00E16CF9 /* AFButton.swift */,
+				517CD59D2B5673DA0004E0B8 /* XDismissButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		517CD5A32B56772B0004E0B8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				511D63EE2B5592E300E16CF9 /* FrameworkTitleView.swift */,
+				517CD5A92B5679A10004E0B8 /* FrameworkTitleViewHorizontal.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		517CD5A42B56773E0004E0B8 /* UIKit Components */ = {
+			isa = PBXGroup;
+			children = (
+				517CD5A12B5676540004E0B8 /* SafariWeb */,
+			);
+			path = "UIKit Components";
+			sourceTree = "<group>";
+		};
+		517CD5AB2B5679C90004E0B8 /* FrameworkList */ = {
+			isa = PBXGroup;
+			children = (
+				517CD5AC2B567A090004E0B8 /* ViewModel */,
+				517CD5AD2B567A150004E0B8 /* FrameworkList.swift */,
+			);
+			path = FrameworkList;
+			sourceTree = "<group>";
+		};
+		517CD5AC2B567A090004E0B8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				517CD5AF2B567A2C0004E0B8 /* FrameworkListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		518641C82B552AC700621435 /* Swift-Weather-App */ = {
 			isa = PBXGroup;
 			children = (
 				51CA7A3B2B542C0800C06421 /* Helpers */,
 				51CBF14D2B5426D400E66CC9 /* Model */,
 				51CBF1492B54267E00E66CC9 /* View */,
 			);
-			path = "Swift-WeatherApp";
+			path = "Swift-Weather-App";
 			sourceTree = "<group>";
 		};
 		51CA7A3B2B542C0800C06421 /* Helpers */ = {
@@ -102,6 +243,7 @@
 			children = (
 				51CBF1472B53F03B00E66CC9 /* WeatherButton.swift */,
 				51CBF14B2B5426BB00E66CC9 /* WeatherView.swift */,
+				511D63E32B55614300E16CF9 /* ExperimentalView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -137,7 +279,8 @@
 		51FBF0012B52BDDF00F6B5FE /* SwiftUI-Bootcamp */ = {
 			isa = PBXGroup;
 			children = (
-				518641C82B552AC700621435 /* Swift-WeatherApp */,
+				511D63E52B55791B00E16CF9 /* Apple-Frameworks-App */,
+				518641C82B552AC700621435 /* Swift-Weather-App */,
 				51FBF0022B52BDDF00F6B5FE /* SwiftUI_BootcampApp.swift */,
 				51FBF0042B52BDDF00F6B5FE /* ContentView.swift */,
 				51FBF0062B52BDE200F6B5FE /* Assets.xcassets */,
@@ -301,12 +444,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				511D63E42B55614300E16CF9 /* ExperimentalView.swift in Sources */,
+				517CD5B42B567CA60004E0B8 /* FrameworkDetailListView.swift in Sources */,
 				51FBF0052B52BDDF00F6B5FE /* ContentView.swift in Sources */,
+				511D63E72B55795B00E16CF9 /* FrameworkGridView.swift in Sources */,
+				511D63EF2B5592E300E16CF9 /* FrameworkTitleView.swift in Sources */,
+				511D63F12B5594AD00E16CF9 /* AFButton.swift in Sources */,
+				517CD5B02B567A2C0004E0B8 /* FrameworkListViewModel.swift in Sources */,
 				51CA7A3D2B542C1A00C06421 /* OffsetReader.swift in Sources */,
+				517CD5AE2B567A150004E0B8 /* FrameworkList.swift in Sources */,
+				511D63EB2B5579B200E16CF9 /* Framework.swift in Sources */,
 				51FBF0032B52BDDF00F6B5FE /* SwiftUI_BootcampApp.swift in Sources */,
+				511D63ED2B55925B00E16CF9 /* FrameworkDetailView.swift in Sources */,
 				51CBF14C2B5426BB00E66CC9 /* WeatherView.swift in Sources */,
+				517CD5AA2B5679A10004E0B8 /* FrameworkTitleViewHorizontal.swift in Sources */,
 				51CBF1482B53F03B00E66CC9 /* WeatherButton.swift in Sources */,
 				51CBF14F2B5426E500E66CC9 /* WeatherDay.swift in Sources */,
+				511D63F42B55A21300E16CF9 /* FrameworkGridViewModel.swift in Sources */,
+				511D63F82B55A8B600E16CF9 /* SafariWebView.swift in Sources */,
+				517CD59E2B5673DA0004E0B8 /* XDismissButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

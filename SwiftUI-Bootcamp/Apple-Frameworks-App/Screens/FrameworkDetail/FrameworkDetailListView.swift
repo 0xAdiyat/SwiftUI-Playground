@@ -7,12 +7,42 @@
 
 import SwiftUI
 
+
 struct FrameworkDetailListView: View {
+    
+    let framework: Framework
+    
+    @Binding var isShowingDetailView: Bool
+    @State private var isShowingSafariView = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            
+            
+            Spacer()
+            
+            FrameworkTitleView(framework: framework)
+            
+            Text(framework.description)
+                .font(.body)
+                .padding()
+            
+            Spacer()
+            
+            Button{
+                isShowingSafariView = true
+                 
+            }label: {
+                AFButton(title: "Learn More")
+            }
+            
+        }
+        .sheet(isPresented: $isShowingSafariView) {
+            SafariWebView(url: URL(string: framework.url) ?? URL(string: "www.github.com/0xAdiyat")!)
+        }
     }
 }
 
 #Preview {
-    FrameworkDetailListView()
+    FrameworkDetailListView(framework: MockData.sampleFramework, isShowingDetailView: .constant(false))
 }

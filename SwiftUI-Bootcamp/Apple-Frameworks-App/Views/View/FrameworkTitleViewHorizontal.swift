@@ -7,12 +7,24 @@
 
 import SwiftUI
 
-struct FrameworkTitleViewHorizontal: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+struct FrameworkTitleViewHorizontal: View{
+    let framework: Framework
+    var body: some View{
+        HStack{
+            Image(framework.imageName)
+                .resizable()
+                .frame(width: 92, height: 92)
+            Text(framework.name)
+                .font(.title2)
+                .fontWeight(.semibold)
+                .scaledToFit()
+                .minimumScaleFactor(0.6)
+                .padding()
+        }
+        .padding()
     }
 }
 
 #Preview {
-    FrameworkTitleViewHorizontal()
+    FrameworkTitleViewHorizontal(framework: MockData.sampleFramework)
 }

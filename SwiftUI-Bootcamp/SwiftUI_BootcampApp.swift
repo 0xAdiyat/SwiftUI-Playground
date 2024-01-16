@@ -11,8 +11,10 @@ import SwiftUI
 struct SwiftUI_BootcampApp: App {
     var body: some Scene {
         WindowGroup {
-            WeatherView()
-            ContentView()
+            FrameworkList()
+//            FrameworkGridView()
+//            WeatherView()
+//            ContentView()
         }
     }
 }

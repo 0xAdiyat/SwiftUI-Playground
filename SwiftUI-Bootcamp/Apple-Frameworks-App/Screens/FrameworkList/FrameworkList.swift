@@ -6,13 +6,30 @@
 //
 
 import SwiftUI
-
 struct FrameworkList: View {
+    
+    @StateObject var viewModel = FrameworkGridViewModel()
+    
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack{
+                List{
+                    ForEach(MockData.frameworks){ framework in
+                        NavigationLink(destination: FrameworkDetailListView(framework: framework, isShowingDetailView: $viewModel.isShowingDetailView)){
+                            FrameworkTitleViewHorizontal(framework: framework)
+
+                        }
+                    }
+                }
+                .navigationTitle(" Frameworks")
+               
+            
+        }
+        .accentColor(Color(.label))
     }
 }
 
 #Preview {
     FrameworkList()
 }
+
