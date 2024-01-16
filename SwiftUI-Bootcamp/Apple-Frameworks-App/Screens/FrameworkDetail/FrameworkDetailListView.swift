@@ -16,22 +16,49 @@ struct FrameworkDetailListView: View {
     @State private var isShowingSafariView = false
     
     var body: some View {
+        
         VStack{
-            
-            
             Spacer()
             
-            FrameworkTitleView(framework: framework)
+            Image(framework.imageName)
+                .resizable()
+                .frame(width: 120, height: 120)
             
-            Text(framework.description)
-                .font(.body)
-                .padding()
             
+            VStack(alignment: .leading){
+                HStack{
+                    Text(framework.name.uppercased())
+                        .font(.title2)
+                        .fontWeight(.bold)
+                        .scaledToFit()
+                        .minimumScaleFactor(0.6)
+                    Spacer()
+                }
+                HStack{
+                    Text("Description")
+                        .font(.title3)
+                        .fontWeight(.medium)
+                        .scaledToFit()
+                        .minimumScaleFactor(0.6)
+                    Spacer()
+                    Rectangle()
+                        .frame(width: 20, height: 3)
+                    
+                }
+            }
+            .padding()
+            ScrollView{
+                Text(framework.description)
+                    .font(.subheadline)
+                    .foregroundStyle(Color(.label).opacity(0.7))
+                    .padding()
+                
+            }
             Spacer()
             
             Button{
                 isShowingSafariView = true
-                 
+                
             }label: {
                 AFButton(title: "Learn More")
             }
@@ -40,6 +67,7 @@ struct FrameworkDetailListView: View {
         .sheet(isPresented: $isShowingSafariView) {
             SafariWebView(url: URL(string: framework.url) ?? URL(string: "www.github.com/0xAdiyat")!)
         }
+        
     }
 }
 
