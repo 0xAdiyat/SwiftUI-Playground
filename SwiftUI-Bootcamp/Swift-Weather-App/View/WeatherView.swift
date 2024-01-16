@@ -8,13 +8,13 @@
 import SwiftUI
 
 
-// ContentView: The main view of the application.
+/// WeatherView: The main view of the application.
 struct WeatherView: View {
 
-    // State variable to control day/night mode
+    /// State variable to control day/night mode
     @State private var isNight = true
 
-    // List of WeatherDay objects, including some nil entries for spacing
+    /// List of WeatherDay objects, including some nil entries for spacing
     let listOfDays: [WeatherDay?] = [
         nil,
         WeatherDay(dayOfWeek: .sun, imageName: "cloud.sun.fill", temperature: 23),
@@ -27,26 +27,25 @@ struct WeatherView: View {
         nil,
     ]
 
-    // Body of the ContentView
     var body: some View {
         ZStack {
-            // BackgroundView with dynamic color based on day/night mode
-            BackgroundView(isNight: $isNight)
+            /// BackgroundView with dynamic color based on day/night mode
+            BackgroundView(isNight: isNight)
             
             VStack(spacing: 0) {
-                // CityTextView displaying the city name
+                /// CityTextView displaying the city name
                 CityTextView(cityName: "Cupertino, CA", color: isNight ? .white : .black)
            
-                // MainWeatherStatusView displaying the main weather status
-                MainWeatherStatusView(imageName: isNight ? "moon.stars.fill": "cloud.sun.fill", temperature: 75, isNight: $isNight)
+                /// MainWeatherStatusView displaying the main weather status
+                MainWeatherStatusView(imageName: isNight  ? "moon.stars.fill": "cloud.sun.fill", temperature: 75, isNight: isNight)
 
-                // Horizontal ScrollView for the weather days
+                /// Horizontal ScrollView for the weather days
                 ScrollView(.horizontal, showsIndicators: false) {
                     ScrollViewReader { scrollView in
                         LazyHStack(spacing: 20) {
                             ForEach(listOfDays.indices, id: \.self) { index in
                                 if let day = listOfDays[index] {
-                                    // Used GeometryReader for animations and transformations
+                                    /// Used GeometryReader for animations and transformations
                                     GeometryReader { geometry in
                                         WeatherDayView(dayOfWeek: day.dayOfWeek, imageName: day.imageName, temperature: day.temperature, isNight: $isNight)
                                             .rotation3DEffect(
@@ -59,13 +58,13 @@ struct WeatherView: View {
                                     .frame(width: 100, height: 140)
                                     .id(day.id)
                                 } else {
-                                    // Placeholder for nil entries
+                                    /// Placeholder for nil entries
                                     Color.clear.frame(width: 100, height: 140)
                                 }
                             }
                         }
                         .onAppear {
-                            // Scroll to the center of the list on appear
+                            /// Scroll to the center of the list on appear
                             scrollView.scrollTo(listOfDays[listOfDays.count / 2]?.id, anchor: .center)
                         }
                     }
@@ -75,7 +74,7 @@ struct WeatherView: View {
                 
                 Spacer(minLength: 40)
                 
-                // Button to toggle day/night mode
+                /// Button to toggle day/night mode
                 Button {
                     isNight.toggle()
                 } label: {
@@ -86,7 +85,7 @@ struct WeatherView: View {
             }
         }
     }
-    // Helper function to compute the rotation angle based on the geometry
+    /// Helper function to compute the rotation angle based on the geometry
     private func computeRotationAngle(geometry: GeometryProxy) -> Double {
         let midX = UIScreen.main.bounds.width / 2
         let distanceFromCenter = Double(geometry.frame(in: .global).midX - midX)
@@ -95,7 +94,7 @@ struct WeatherView: View {
         return angle
     }
 
-    // Helper function to compute the scale factor based on the geometry
+    /// Helper function to compute the scale factor based on the geometry
     private func computeScaleFactor(geometry: GeometryProxy) -> CGFloat {
         let midX = UIScreen.main.bounds.width / 2
         let distanceFromCenter = abs(geometry.frame(in: .global).midX - midX)
@@ -104,7 +103,7 @@ struct WeatherView: View {
         return scaleFactor
     }
 
-    // Helper function to compute the opacity based on the geometry
+    /// Helper function to compute the opacity based on the geometry
     private func computeOpacity(geometry: GeometryProxy) -> Double {
         let midX = UIScreen.main.bounds.width / 2
         let distanceFromCenter = abs(geometry.frame(in: .global).midX - midX)
@@ -114,7 +113,7 @@ struct WeatherView: View {
     }
 }
 
-// ContentView_Previews: Previews for the ContentView
+/// WeatherView_Previews: Previews for the WeatherView
 #if DEBUG
 struct WeatherView_Previews: PreviewProvider {
     static var previews: some View {
@@ -125,8 +124,8 @@ struct WeatherView_Previews: PreviewProvider {
 
 
 
-// WeatherDayView: Display individual weather day information
-struct WeatherDayView: View {
+/// WeatherDayView: Display individual weather day information
+private struct WeatherDayView: View {
     var dayOfWeek: String
     var imageName: String
     var temperature: Int
@@ -163,21 +162,21 @@ struct WeatherDayView: View {
     }
 }
 
-// BackgroundView: Display the background gradient based on day/night mode
-struct BackgroundView: View {
-    @Binding var isNight: Bool
+/// BackgroundView: Display the background gradient based on day/night mode
+private struct BackgroundView: View {
+     var isNight: Bool /// if you are not changing(just reading in this case) @Binding is not necessary
     
     var body: some View {
         LinearGradient(gradient: Gradient(colors: [isNight ? .black : .white,  isNight ? .blackCustom: .white]),
                        startPoint: .topLeading,
                        endPoint: .bottomTrailing)
-        .edgesIgnoringSafeArea(.all)
+        .ignoresSafeArea()
         .animation(.easeInOut, value: UUID())
     }
 }
 
-// CityTextView: Display the city name
-struct CityTextView: View {
+/// CityTextView: Display the city name
+private struct CityTextView: View {
     var cityName: String
     var color: Color?
     
@@ -190,13 +189,12 @@ struct CityTextView: View {
     }
 }
 
-// MainWeatherStatusView: Display the main weather status
-/// <#Description#>
-struct MainWeatherStatusView: View {
+/// MainWeatherStatusView: Display the main weather status
+private struct MainWeatherStatusView: View {
     var imageName: String
     var temperature: Int
     
-    @Binding var isNight:  Bool
+     var isNight:  Bool
     
     
     var body: some View {
