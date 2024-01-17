@@ -11,7 +11,8 @@ import SwiftUI
 struct SwiftUI_BootcampApp: App {
     var body: some Scene {
         WindowGroup {
-            FrameworkList()
+            BarcodeScannerView()
+//            FrameworkList()
 //            FrameworkGridView()
 //            WeatherView()
 //            ContentView()

@@ -15,11 +15,16 @@
 		511D63F12B5594AD00E16CF9 /* AFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511D63F02B5594AD00E16CF9 /* AFButton.swift */; };
 		511D63F42B55A21300E16CF9 /* FrameworkGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511D63F32B55A21300E16CF9 /* FrameworkGridViewModel.swift */; };
 		511D63F82B55A8B600E16CF9 /* SafariWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511D63F72B55A8B600E16CF9 /* SafariWebView.swift */; };
+		512623BD2B57B93800009B5F /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512623BC2B57B93800009B5F /* Alert.swift */; };
+		512623BF2B57BD3A00009B5F /* BarcodeScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512623BE2B57BD3A00009B5F /* BarcodeScannerViewModel.swift */; };
 		517CD59E2B5673DA0004E0B8 /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517CD59D2B5673DA0004E0B8 /* XDismissButton.swift */; };
 		517CD5AA2B5679A10004E0B8 /* FrameworkTitleViewHorizontal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517CD5A92B5679A10004E0B8 /* FrameworkTitleViewHorizontal.swift */; };
 		517CD5AE2B567A150004E0B8 /* FrameworkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517CD5AD2B567A150004E0B8 /* FrameworkList.swift */; };
 		517CD5B02B567A2C0004E0B8 /* FrameworkListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517CD5AF2B567A2C0004E0B8 /* FrameworkListViewModel.swift */; };
-		517CD5B42B567CA60004E0B8 /* FrameworkDetailListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517CD5B32B567CA60004E0B8 /* FrameworkDetailListView.swift */; };
+		517CD5BB2B56A7E00004E0B8 /* BarcodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517CD5BA2B56A7E00004E0B8 /* BarcodeScannerView.swift */; };
+		517CD5BF2B56ACB70004E0B8 /* ScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517CD5BE2B56ACB70004E0B8 /* ScannerVC.swift */; };
+		517CD5C12B56D54C0004E0B8 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517CD5C02B56D54C0004E0B8 /* ScannerView.swift */; };
+		517CD5C32B56F6B40004E0B8 /* FrameworkDetailListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517CD5C22B56F6B40004E0B8 /* FrameworkDetailListView.swift */; };
 		51CA7A3D2B542C1A00C06421 /* OffsetReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CA7A3C2B542C1A00C06421 /* OffsetReader.swift */; };
 		51CBF1482B53F03B00E66CC9 /* WeatherButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CBF1472B53F03B00E66CC9 /* WeatherButton.swift */; };
 		51CBF14C2B5426BB00E66CC9 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CBF14B2B5426BB00E66CC9 /* WeatherView.swift */; };
@@ -59,11 +64,17 @@
 		511D63F02B5594AD00E16CF9 /* AFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFButton.swift; sourceTree = "<group>"; };
 		511D63F32B55A21300E16CF9 /* FrameworkGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridViewModel.swift; sourceTree = "<group>"; };
 		511D63F72B55A8B600E16CF9 /* SafariWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebView.swift; sourceTree = "<group>"; };
+		512623BC2B57B93800009B5F /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		512623BE2B57BD3A00009B5F /* BarcodeScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerViewModel.swift; sourceTree = "<group>"; };
 		517CD59D2B5673DA0004E0B8 /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
 		517CD5A92B5679A10004E0B8 /* FrameworkTitleViewHorizontal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkTitleViewHorizontal.swift; sourceTree = "<group>"; };
 		517CD5AD2B567A150004E0B8 /* FrameworkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkList.swift; sourceTree = "<group>"; };
 		517CD5AF2B567A2C0004E0B8 /* FrameworkListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkListViewModel.swift; sourceTree = "<group>"; };
-		517CD5B32B567CA60004E0B8 /* FrameworkDetailListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailListView.swift; sourceTree = "<group>"; };
+		517CD5BA2B56A7E00004E0B8 /* BarcodeScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerView.swift; sourceTree = "<group>"; };
+		517CD5BC2B56AB920004E0B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		517CD5BE2B56ACB70004E0B8 /* ScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerVC.swift; sourceTree = "<group>"; };
+		517CD5C02B56D54C0004E0B8 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		517CD5C22B56F6B40004E0B8 /* FrameworkDetailListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailListView.swift; sourceTree = "<group>"; };
 		51CA7A3C2B542C1A00C06421 /* OffsetReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetReader.swift; sourceTree = "<group>"; };
 		51CBF1472B53F03B00E66CC9 /* WeatherButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherButton.swift; sourceTree = "<group>"; };
 		51CBF14B2B5426BB00E66CC9 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
@@ -151,6 +162,14 @@
 			path = Screens;
 			sourceTree = "<group>";
 		};
+		512623BB2B57B92500009B5F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				512623BC2B57B93800009B5F /* Alert.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		517CD59F2B5676130004E0B8 /* FrameworkGrid */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,7 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				511D63EC2B55925B00E16CF9 /* FrameworkDetailView.swift */,
-				517CD5B32B567CA60004E0B8 /* FrameworkDetailListView.swift */,
+				517CD5C22B56F6B40004E0B8 /* FrameworkDetailListView.swift */,
 			);
 			path = FrameworkDetail;
 			sourceTree = "<group>";
@@ -218,6 +237,58 @@
 				517CD5AF2B567A2C0004E0B8 /* FrameworkListViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		517CD5B52B56A7970004E0B8 /* BarcodeScanner-App */ = {
+			isa = PBXGroup;
+			children = (
+				512623BB2B57B92500009B5F /* Utilities */,
+				517CD5B92B56A7C60004E0B8 /* ViewModels */,
+				517CD5B82B56A7BA0004E0B8 /* Models */,
+				517CD5B72B56A7B50004E0B8 /* Views */,
+				517CD5B62B56A7B00004E0B8 /* Screens */,
+			);
+			path = "BarcodeScanner-App";
+			sourceTree = "<group>";
+		};
+		517CD5B62B56A7B00004E0B8 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				517CD5BA2B56A7E00004E0B8 /* BarcodeScannerView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		517CD5B72B56A7B50004E0B8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				517CD5BD2B56AC950004E0B8 /* UIKit Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		517CD5B82B56A7BA0004E0B8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		517CD5B92B56A7C60004E0B8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				512623BE2B57BD3A00009B5F /* BarcodeScannerViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		517CD5BD2B56AC950004E0B8 /* UIKit Components */ = {
+			isa = PBXGroup;
+			children = (
+				517CD5BE2B56ACB70004E0B8 /* ScannerVC.swift */,
+				517CD5C02B56D54C0004E0B8 /* ScannerView.swift */,
+			);
+			path = "UIKit Components";
 			sourceTree = "<group>";
 		};
 		518641C82B552AC700621435 /* Swift-Weather-App */ = {
@@ -279,6 +350,8 @@
 		51FBF0012B52BDDF00F6B5FE /* SwiftUI-Bootcamp */ = {
 			isa = PBXGroup;
 			children = (
+				517CD5BC2B56AB920004E0B8 /* Info.plist */,
+				517CD5B52B56A7970004E0B8 /* BarcodeScanner-App */,
 				511D63E52B55791B00E16CF9 /* Apple-Frameworks-App */,
 				518641C82B552AC700621435 /* Swift-Weather-App */,
 				51FBF0022B52BDDF00F6B5FE /* SwiftUI_BootcampApp.swift */,
@@ -444,17 +517,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				517CD5BB2B56A7E00004E0B8 /* BarcodeScannerView.swift in Sources */,
 				511D63E42B55614300E16CF9 /* ExperimentalView.swift in Sources */,
-				517CD5B42B567CA60004E0B8 /* FrameworkDetailListView.swift in Sources */,
 				51FBF0052B52BDDF00F6B5FE /* ContentView.swift in Sources */,
+				512623BD2B57B93800009B5F /* Alert.swift in Sources */,
 				511D63E72B55795B00E16CF9 /* FrameworkGridView.swift in Sources */,
+				517CD5C32B56F6B40004E0B8 /* FrameworkDetailListView.swift in Sources */,
+				512623BF2B57BD3A00009B5F /* BarcodeScannerViewModel.swift in Sources */,
 				511D63EF2B5592E300E16CF9 /* FrameworkTitleView.swift in Sources */,
 				511D63F12B5594AD00E16CF9 /* AFButton.swift in Sources */,
 				517CD5B02B567A2C0004E0B8 /* FrameworkListViewModel.swift in Sources */,
 				51CA7A3D2B542C1A00C06421 /* OffsetReader.swift in Sources */,
+				517CD5C12B56D54C0004E0B8 /* ScannerView.swift in Sources */,
 				517CD5AE2B567A150004E0B8 /* FrameworkList.swift in Sources */,
 				511D63EB2B5579B200E16CF9 /* Framework.swift in Sources */,
 				51FBF0032B52BDDF00F6B5FE /* SwiftUI_BootcampApp.swift in Sources */,
+				517CD5BF2B56ACB70004E0B8 /* ScannerVC.swift in Sources */,
 				511D63ED2B55925B00E16CF9 /* FrameworkDetailView.swift in Sources */,
 				51CBF14C2B5426BB00E66CC9 /* WeatherView.swift in Sources */,
 				517CD5AA2B5679A10004E0B8 /* FrameworkTitleViewHorizontal.swift in Sources */,
@@ -628,6 +706,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-Bootcamp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI-Bootcamp/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -656,6 +735,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-Bootcamp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI-Bootcamp/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

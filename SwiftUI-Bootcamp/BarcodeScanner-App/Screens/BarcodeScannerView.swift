@@ -7,9 +7,51 @@
 
 import SwiftUI
 
+
+
 struct BarcodeScannerView: View {
+
+    /// Usual way
+//    @State private var isShowingAlert = false
+
+    /// Second way
+//    @State private var scannedCode = ""
+//    @State private var alertItem: AlertItem?
+    
+    /// Third way
+    @StateObject var viewModel = BarcodeScannerViewModel()
+
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+
+        NavigationStack{
+            VStack{
+                ScannerView(scannedCode: $viewModel.scannedCode, alertItem: $viewModel.alertItem)
+                    .frame(maxWidth: .infinity, maxHeight: 300)
+                Spacer().frame(height: 60)
+                Label("Scanned Barcode", systemImage: "barcode.viewfinder")
+                    .font(.title2)
+                Text(viewModel.statusText)
+                    .bold()
+                    .font(.largeTitle)
+                    .foregroundStyle(viewModel.statusTextColor)
+                    .padding()
+                
+//                Button{
+//                    isShowingAlert = true
+//                }label:{
+//                    Text("Tap Me")
+//                }
+            }
+            .navigationTitle("Barcode Scanner")
+//            .alert(isPresented: $isShowingAlert) {
+//                Alert(title: Text("Test"), message: Text("This is a test"),dismissButton: .default(Text("Ok")))
+//            }
+            .alert(item: $viewModel.alertItem) { item in
+                Alert(title: item.titleText, message: item.messageText, dismissButton: item.dismissButton)
+                
+            }
+        }
     }
 }
 

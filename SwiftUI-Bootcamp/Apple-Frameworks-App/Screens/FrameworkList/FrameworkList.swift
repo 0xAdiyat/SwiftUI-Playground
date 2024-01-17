@@ -15,14 +15,20 @@ struct FrameworkList: View {
         NavigationStack{
                 List{
                     ForEach(MockData.frameworks){ framework in
-                        NavigationLink(destination: FrameworkDetailListView(framework: framework, isShowingDetailView: $viewModel.isShowingDetailView)){
-                            FrameworkTitleViewHorizontal(framework: framework)
-
-                        }
+//                        NavigationLink(destination: FrameworkDetailListView(framework: framework, isShowingDetailView: $viewModel.isShowingDetailView)){
+//                            
+//                            FrameworkTitleViewHorizontal(framework: framework)
+//
+//                        }
+                        
+                        NavigationLink(value: framework){
+                            FrameworkTitleViewHorizontal(framework: framework)                        }
                     }
                 }
                 .navigationTitle(" Frameworks")
-               
+                .navigationDestination(for: Framework.self) { framework in
+                FrameworkDetailListView(framework: framework)
+            }
             
         }
         .accentColor(Color(.label))
