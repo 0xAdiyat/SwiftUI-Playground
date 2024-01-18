@@ -17,6 +17,10 @@
 		511D63F82B55A8B600E16CF9 /* SafariWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511D63F72B55A8B600E16CF9 /* SafariWebView.swift */; };
 		512623BD2B57B93800009B5F /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512623BC2B57B93800009B5F /* Alert.swift */; };
 		512623BF2B57BD3A00009B5F /* BarcodeScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512623BE2B57BD3A00009B5F /* BarcodeScannerViewModel.swift */; };
+		512623C32B57C0DD00009B5F /* AppetizerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512623C22B57C0DD00009B5F /* AppetizerTabView.swift */; };
+		512623C52B57C1B100009B5F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512623C42B57C1B100009B5F /* HomeView.swift */; };
+		512623C72B57C1B800009B5F /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512623C62B57C1B800009B5F /* AccountView.swift */; };
+		512623C92B57C1C000009B5F /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512623C82B57C1C000009B5F /* OrderView.swift */; };
 		517CD59E2B5673DA0004E0B8 /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517CD59D2B5673DA0004E0B8 /* XDismissButton.swift */; };
 		517CD5AA2B5679A10004E0B8 /* FrameworkTitleViewHorizontal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517CD5A92B5679A10004E0B8 /* FrameworkTitleViewHorizontal.swift */; };
 		517CD5AE2B567A150004E0B8 /* FrameworkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517CD5AD2B567A150004E0B8 /* FrameworkList.swift */; };
@@ -25,6 +29,17 @@
 		517CD5BF2B56ACB70004E0B8 /* ScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517CD5BE2B56ACB70004E0B8 /* ScannerVC.swift */; };
 		517CD5C12B56D54C0004E0B8 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517CD5C02B56D54C0004E0B8 /* ScannerView.swift */; };
 		517CD5C32B56F6B40004E0B8 /* FrameworkDetailListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517CD5C22B56F6B40004E0B8 /* FrameworkDetailListView.swift */; };
+		51914B0F2B5800FD006B05D9 /* Appetizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51914B0E2B5800FD006B05D9 /* Appetizer.swift */; };
+		51914B122B5813E3006B05D9 /* AppetizerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51914B112B5813E2006B05D9 /* AppetizerListCell.swift */; };
+		51914B152B582B9C006B05D9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51914B142B582B9C006B05D9 /* NetworkManager.swift */; };
+		51914B1A2B584CD1006B05D9 /* APError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51914B192B584CD1006B05D9 /* APError.swift */; };
+		51914B202B58E861006B05D9 /* AppetizerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51914B1F2B58E861006B05D9 /* AppetizerListViewModel.swift */; };
+		51914B232B58EA9B006B05D9 /* APAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51914B222B58EA9B006B05D9 /* APAlert.swift */; };
+		51914B252B590DF2006B05D9 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51914B242B590DF2006B05D9 /* ImageLoader.swift */; };
+		51914B292B591263006B05D9 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51914B282B591263006B05D9 /* LoadingView.swift */; };
+		51914B2E2B593AA1006B05D9 /* AppetizerDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51914B2D2B593AA1006B05D9 /* AppetizerDetailsView.swift */; };
+		51914B302B593F84006B05D9 /* XDismissButtonAP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51914B2F2B593F84006B05D9 /* XDismissButtonAP.swift */; };
+		51914B332B59477E006B05D9 /* APButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51914B322B59477E006B05D9 /* APButton.swift */; };
 		51CA7A3D2B542C1A00C06421 /* OffsetReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CA7A3C2B542C1A00C06421 /* OffsetReader.swift */; };
 		51CBF1482B53F03B00E66CC9 /* WeatherButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CBF1472B53F03B00E66CC9 /* WeatherButton.swift */; };
 		51CBF14C2B5426BB00E66CC9 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CBF14B2B5426BB00E66CC9 /* WeatherView.swift */; };
@@ -66,6 +81,10 @@
 		511D63F72B55A8B600E16CF9 /* SafariWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebView.swift; sourceTree = "<group>"; };
 		512623BC2B57B93800009B5F /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		512623BE2B57BD3A00009B5F /* BarcodeScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerViewModel.swift; sourceTree = "<group>"; };
+		512623C22B57C0DD00009B5F /* AppetizerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerTabView.swift; sourceTree = "<group>"; };
+		512623C42B57C1B100009B5F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		512623C62B57C1B800009B5F /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		512623C82B57C1C000009B5F /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		517CD59D2B5673DA0004E0B8 /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
 		517CD5A92B5679A10004E0B8 /* FrameworkTitleViewHorizontal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkTitleViewHorizontal.swift; sourceTree = "<group>"; };
 		517CD5AD2B567A150004E0B8 /* FrameworkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkList.swift; sourceTree = "<group>"; };
@@ -75,6 +94,17 @@
 		517CD5BE2B56ACB70004E0B8 /* ScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerVC.swift; sourceTree = "<group>"; };
 		517CD5C02B56D54C0004E0B8 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
 		517CD5C22B56F6B40004E0B8 /* FrameworkDetailListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailListView.swift; sourceTree = "<group>"; };
+		51914B0E2B5800FD006B05D9 /* Appetizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appetizer.swift; sourceTree = "<group>"; };
+		51914B112B5813E2006B05D9 /* AppetizerListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListCell.swift; sourceTree = "<group>"; };
+		51914B142B582B9C006B05D9 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		51914B192B584CD1006B05D9 /* APError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APError.swift; sourceTree = "<group>"; };
+		51914B1F2B58E861006B05D9 /* AppetizerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListViewModel.swift; sourceTree = "<group>"; };
+		51914B222B58EA9B006B05D9 /* APAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APAlert.swift; sourceTree = "<group>"; };
+		51914B242B590DF2006B05D9 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		51914B282B591263006B05D9 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		51914B2D2B593AA1006B05D9 /* AppetizerDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerDetailsView.swift; sourceTree = "<group>"; };
+		51914B2F2B593F84006B05D9 /* XDismissButtonAP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButtonAP.swift; sourceTree = "<group>"; };
+		51914B322B59477E006B05D9 /* APButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APButton.swift; sourceTree = "<group>"; };
 		51CA7A3C2B542C1A00C06421 /* OffsetReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetReader.swift; sourceTree = "<group>"; };
 		51CBF1472B53F03B00E66CC9 /* WeatherButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherButton.swift; sourceTree = "<group>"; };
 		51CBF14B2B5426BB00E66CC9 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
@@ -168,6 +198,28 @@
 				512623BC2B57B93800009B5F /* Alert.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		512623C02B57C09F00009B5F /* Appetizers-App */ = {
+			isa = PBXGroup;
+			children = (
+				51914B162B584C9A006B05D9 /* Utilities */,
+				51914B102B5813CF006B05D9 /* Views */,
+				51914B0D2B5800C7006B05D9 /* Models */,
+				512623C12B57C0C200009B5F /* Screens */,
+			);
+			path = "Appetizers-App";
+			sourceTree = "<group>";
+		};
+		512623C12B57C0C200009B5F /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				51914B2B2B591511006B05D9 /* AccountScreen */,
+				51914B2A2B591504006B05D9 /* OrderScreen */,
+				51914B1D2B58E83B006B05D9 /* HomeScreen */,
+				512623C22B57C0DD00009B5F /* AppetizerTabView.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 		517CD59F2B5676130004E0B8 /* FrameworkGrid */ = {
@@ -301,6 +353,110 @@
 			path = "Swift-Weather-App";
 			sourceTree = "<group>";
 		};
+		51914B0D2B5800C7006B05D9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				51914B0E2B5800FD006B05D9 /* Appetizer.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		51914B102B5813CF006B05D9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				51914B312B594770006B05D9 /* Buttons */,
+				51914B272B591250006B05D9 /* UIKit Components */,
+				51914B112B5813E2006B05D9 /* AppetizerListCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		51914B132B582B8B006B05D9 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				51914B142B582B9C006B05D9 /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		51914B162B584C9A006B05D9 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				51914B132B582B8B006B05D9 /* Managers */,
+				51914B262B59114E006B05D9 /* Alerts */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		51914B1B2B584CD4006B05D9 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				51914B192B584CD1006B05D9 /* APError.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		51914B1D2B58E83B006B05D9 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				51914B1E2B58E849006B05D9 /* ViewModel */,
+				512623C42B57C1B100009B5F /* HomeView.swift */,
+				51914B2D2B593AA1006B05D9 /* AppetizerDetailsView.swift */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		51914B1E2B58E849006B05D9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				51914B1F2B58E861006B05D9 /* AppetizerListViewModel.swift */,
+				51914B242B590DF2006B05D9 /* ImageLoader.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		51914B262B59114E006B05D9 /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				51914B222B58EA9B006B05D9 /* APAlert.swift */,
+				51914B1B2B584CD4006B05D9 /* Enums */,
+			);
+			path = Alerts;
+			sourceTree = "<group>";
+		};
+		51914B272B591250006B05D9 /* UIKit Components */ = {
+			isa = PBXGroup;
+			children = (
+				51914B282B591263006B05D9 /* LoadingView.swift */,
+			);
+			path = "UIKit Components";
+			sourceTree = "<group>";
+		};
+		51914B2A2B591504006B05D9 /* OrderScreen */ = {
+			isa = PBXGroup;
+			children = (
+				512623C82B57C1C000009B5F /* OrderView.swift */,
+			);
+			path = OrderScreen;
+			sourceTree = "<group>";
+		};
+		51914B2B2B591511006B05D9 /* AccountScreen */ = {
+			isa = PBXGroup;
+			children = (
+				512623C62B57C1B800009B5F /* AccountView.swift */,
+			);
+			path = AccountScreen;
+			sourceTree = "<group>";
+		};
+		51914B312B594770006B05D9 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				51914B2F2B593F84006B05D9 /* XDismissButtonAP.swift */,
+				51914B322B59477E006B05D9 /* APButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
 		51CA7A3B2B542C0800C06421 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -350,13 +506,14 @@
 		51FBF0012B52BDDF00F6B5FE /* SwiftUI-Bootcamp */ = {
 			isa = PBXGroup;
 			children = (
-				517CD5BC2B56AB920004E0B8 /* Info.plist */,
+				512623C02B57C09F00009B5F /* Appetizers-App */,
 				517CD5B52B56A7970004E0B8 /* BarcodeScanner-App */,
 				511D63E52B55791B00E16CF9 /* Apple-Frameworks-App */,
 				518641C82B552AC700621435 /* Swift-Weather-App */,
 				51FBF0022B52BDDF00F6B5FE /* SwiftUI_BootcampApp.swift */,
 				51FBF0042B52BDDF00F6B5FE /* ContentView.swift */,
 				51FBF0062B52BDE200F6B5FE /* Assets.xcassets */,
+				517CD5BC2B56AB920004E0B8 /* Info.plist */,
 				51FBF0082B52BDE200F6B5FE /* Preview Content */,
 			);
 			path = "SwiftUI-Bootcamp";
@@ -520,18 +677,29 @@
 				517CD5BB2B56A7E00004E0B8 /* BarcodeScannerView.swift in Sources */,
 				511D63E42B55614300E16CF9 /* ExperimentalView.swift in Sources */,
 				51FBF0052B52BDDF00F6B5FE /* ContentView.swift in Sources */,
+				51914B1A2B584CD1006B05D9 /* APError.swift in Sources */,
 				512623BD2B57B93800009B5F /* Alert.swift in Sources */,
 				511D63E72B55795B00E16CF9 /* FrameworkGridView.swift in Sources */,
+				51914B2E2B593AA1006B05D9 /* AppetizerDetailsView.swift in Sources */,
+				51914B0F2B5800FD006B05D9 /* Appetizer.swift in Sources */,
+				51914B252B590DF2006B05D9 /* ImageLoader.swift in Sources */,
 				517CD5C32B56F6B40004E0B8 /* FrameworkDetailListView.swift in Sources */,
+				512623C72B57C1B800009B5F /* AccountView.swift in Sources */,
 				512623BF2B57BD3A00009B5F /* BarcodeScannerViewModel.swift in Sources */,
+				51914B302B593F84006B05D9 /* XDismissButtonAP.swift in Sources */,
 				511D63EF2B5592E300E16CF9 /* FrameworkTitleView.swift in Sources */,
 				511D63F12B5594AD00E16CF9 /* AFButton.swift in Sources */,
 				517CD5B02B567A2C0004E0B8 /* FrameworkListViewModel.swift in Sources */,
+				51914B202B58E861006B05D9 /* AppetizerListViewModel.swift in Sources */,
 				51CA7A3D2B542C1A00C06421 /* OffsetReader.swift in Sources */,
+				51914B332B59477E006B05D9 /* APButton.swift in Sources */,
 				517CD5C12B56D54C0004E0B8 /* ScannerView.swift in Sources */,
+				51914B292B591263006B05D9 /* LoadingView.swift in Sources */,
+				51914B122B5813E3006B05D9 /* AppetizerListCell.swift in Sources */,
 				517CD5AE2B567A150004E0B8 /* FrameworkList.swift in Sources */,
 				511D63EB2B5579B200E16CF9 /* Framework.swift in Sources */,
 				51FBF0032B52BDDF00F6B5FE /* SwiftUI_BootcampApp.swift in Sources */,
+				51914B152B582B9C006B05D9 /* NetworkManager.swift in Sources */,
 				517CD5BF2B56ACB70004E0B8 /* ScannerVC.swift in Sources */,
 				511D63ED2B55925B00E16CF9 /* FrameworkDetailView.swift in Sources */,
 				51CBF14C2B5426BB00E66CC9 /* WeatherView.swift in Sources */,
@@ -540,7 +708,11 @@
 				51CBF14F2B5426E500E66CC9 /* WeatherDay.swift in Sources */,
 				511D63F42B55A21300E16CF9 /* FrameworkGridViewModel.swift in Sources */,
 				511D63F82B55A8B600E16CF9 /* SafariWebView.swift in Sources */,
+				512623C52B57C1B100009B5F /* HomeView.swift in Sources */,
+				512623C92B57C1C000009B5F /* OrderView.swift in Sources */,
+				51914B232B58EA9B006B05D9 /* APAlert.swift in Sources */,
 				517CD59E2B5673DA0004E0B8 /* XDismissButton.swift in Sources */,
+				512623C32B57C0DD00009B5F /* AppetizerTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

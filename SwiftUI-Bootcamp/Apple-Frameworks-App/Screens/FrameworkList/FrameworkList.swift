@@ -27,7 +27,7 @@ struct FrameworkList: View {
                 }
                 .navigationTitle(" Frameworks")
                 .navigationDestination(for: Framework.self) { framework in
-                FrameworkDetailListView(framework: framework)
+//                FrameworkDetailListView(framework: framework)
             }
             
         }

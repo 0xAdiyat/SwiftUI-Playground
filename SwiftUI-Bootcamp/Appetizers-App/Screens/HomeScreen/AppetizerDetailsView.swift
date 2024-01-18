@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct AppetizerDetailsView: View {
+    
     let appetizer: Appetizer
     @Binding var isShowingDetailsScreen: Bool
     
@@ -35,14 +36,10 @@ struct AppetizerDetailsView: View {
             }
             Spacer()
             
-            Button{}label: {
-                Text("$\(appetizer.price, specifier: "%.2f") - Add to cart")
-                    .font(.title3)
-                    .frame(width: 260, height: 50)
-                    .foregroundStyle(.white)
-                    .background(.appetizersAccent)
-                    .clipShape(.rect(cornerRadius: 12))
-
+            Button{
+                
+            }label: {
+                APButton(title:"$\(appetizer.price, specifier: "%.2f") - Add to cart")
             }
             .padding(.bottom, 32)
         }

@@ -9,36 +9,58 @@ import SwiftUI
 
 struct HomeView: View {
     
-    @State private var appetizers: [Appetizer] = []
+    @StateObject var appetizerListViewModel = AppetizerListViewModel()
     
     var body: some View {
-        NavigationStack{
-                List(appetizers) { appetizer in
-                AppetizerListCell(appetizer: appetizer)
+        ZStack{
+            NavigationStack{
+                List(appetizerListViewModel.appetizers) { appetizer in
+                    AppetizerListCell(appetizer: appetizer)
+                        .onTapGesture {
+                            appetizerListViewModel.selectedAppetizer = appetizer
+                            appetizerListViewModel.isShowingDetail = true
+                        }
                 }
-            .navigationTitle("🍟 Appetizers")
-
+                .navigationTitle("🍟 Appetizers")
+                .disabled(appetizerListViewModel.isShowingDetail)
+                
+            }
+            .onAppear{
+                appetizerListViewModel.getAppetizers()
+            }
+            .blur(radius: appetizerListViewModel.isShowingDetail ? 20 : 0)
+            
+            if appetizerListViewModel.isShowingDetail{
+                AppetizerDetailsView(appetizer: appetizerListViewModel.selectedAppetizer ?? MockDataAppetizer.sampleAppetizer, isShowingDetailsScreen: $appetizerListViewModel.isShowingDetail)
+            }
+            if appetizerListViewModel.isLoading {
+//                ProgressView()
+                LoadingView()
+            }
+            
+            if appetizerListViewModel.appetizers.isEmpty{
+                VStack{
+                    Image(.foodPlaceholder)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 120, height: 90, alignment: .center)
+                        .cornerRadius(8)
+                    
+                    Text("No appetizer found...")
+                        .font(.body)
+                        .fontWeight(.medium)
+                        .foregroundStyle(.secondary)
+                }
+            }
+            
+            
         }
-        .onAppear{
-            getAppetizers()
+        .alert(item: $appetizerListViewModel.alertItem) { item in
+            Alert(title: item.title, message: item.message, dismissButton: item.dismissButton)
         }
     }
     
-    func getAppetizers(){
-     
-        NetworkManager.shared.getAppetizers { result in
-            DispatchQueue.main.async{
-                switch result {
-                        
-                    case let .success(appetizers):
-                        self.appetizers =  appetizers
-                        
-                    case let .failure(err):
-                        print(err.localizedDescription)
-                }
-            }
-        }
-    }
+
 }
 
 #Preview {
