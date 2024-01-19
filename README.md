@@ -1,7 +1,7 @@
 # SwiftUI Playground
 
 > [!IMPORTANT]
-> This repository contains the source code of all the very first iOS apps that I worked on during my time when I started learning SwiftUI for the very first time. I followed Sean Allen's SwiftUI Fundamentals Course which was 11 hours long.
+> This repository comprises the source code of the initial iOS apps I developed while learning SwiftUI for the first time. I followed Sean Allen's SwiftUI Fundamentals Course, which spanned 11 hours.
 
 
 ### 1. THE WEATHER - APP
