@@ -7,17 +7,17 @@
 
 import SwiftUI
 
-struct ActivityIndicator: UIViewRepresentable {
-    
-    func makeUIView(context: Context) -> UIActivityIndicatorView {
-        let activityIndicatorView = UIActivityIndicatorView(style: .large)
-        activityIndicatorView.color = .appetizersAccent
-        activityIndicatorView.startAnimating()
-        return activityIndicatorView
-    }
-    
-    func updateUIView(_ uiView: UIActivityIndicatorView, context: Context) {}
-}
+//struct ActivityIndicator: UIViewRepresentable {
+//    
+//    func makeUIView(context: Context) -> UIActivityIndicatorView {
+//        let activityIndicatorView = UIActivityIndicatorView(style: .large)
+//        activityIndicatorView.color = .appetizersAccent
+//        activityIndicatorView.startAnimating()
+//        return activityIndicatorView
+//    }
+//    
+//    func updateUIView(_ uiView: UIActivityIndicatorView, context: Context) {}
+//}
 
 
 struct LoadingView: View {
@@ -25,6 +25,8 @@ struct LoadingView: View {
         ZStack {
             Color(.systemBackground)
                 .ignoresSafeArea()
+            
+//            ActivityIndicator()
             
             ProgressView()
                 .progressViewStyle(CircularProgressViewStyle(tint: .appetizersAccent))

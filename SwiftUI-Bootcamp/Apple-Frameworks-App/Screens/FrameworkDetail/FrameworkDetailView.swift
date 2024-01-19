@@ -9,40 +9,46 @@ import SwiftUI
 
 struct FrameworkDetailView: View {
     
-    let framework: Framework
+//    let framework: Framework
+//    
+//    @Binding var isShowingDetailView: Bool
+//    @State private var isShowingSafariView = false
     
-    @Binding var isShowingDetailView: Bool
-    @State private var isShowingSafariView = false
+    @ObservedObject var viewModel :  FrameworkDetailViewModel
     
     var body: some View {
         VStack{
             
-            XDismissButton(isShowingDetailView: $isShowingDetailView)
+            XDismissButton(isShowingDetailView: $viewModel.isShowingDetailView.wrappedValue)
             
             Spacer()
             
-            FrameworkTitleView(framework: framework)
+            FrameworkTitleView(framework: viewModel.framework)
             
-            Text(framework.description)
+            Text(viewModel.framework.description)
                 .font(.body)
                 .padding()
             
             Spacer()
             
+//            Link(destination:  URL(string: viewModel.framework.url) ?? URL(string: "www.github.com/0xAdiyat")!, label: {
+//                AFButton(title: "Learn More")
+//            })
+            
             Button{
-                isShowingSafariView = true
+                viewModel.isShowingSafariView = true
                  
             }label: {
                 AFButton(title: "Learn More")
             }
             
         }
-        .sheet(isPresented: $isShowingSafariView) {
-            SafariWebView(url: URL(string: framework.url) ?? URL(string: "www.github.com/0xAdiyat")!)
+        .sheet(isPresented: $viewModel.isShowingSafariView) {
+            SafariWebView(url: URL(string: viewModel.framework.url) ?? URL(string: "www.github.com/0xAdiyat")!)
         }
     }
 }
 
 #Preview {
-    FrameworkDetailView(framework: MockData.sampleFramework, isShowingDetailView: .constant(false))
+    FrameworkDetailView(viewModel: FrameworkDetailViewModel(framework: MockData.sampleFramework, isShowingDetailView: .constant(false)))
 }
