@@ -17,6 +17,8 @@ struct APAlertItem : Identifiable{
     
 }
 struct APAlertContext {
+    
+    //MARK: - API Responses
     static let invalidData = APAlertItem(title: Text("Server Error"),
                                          message:Text( "The data received from the server was invalid. Please contact support."),
                                          dismissButton: .default(Text("OK")))
@@ -32,6 +34,24 @@ struct APAlertContext {
         message: Text("Unable complete your request at this time. Please check your internet connection."),
         dismissButton: .default(Text("OK"))
     )
+    
+    
+    //MARK: - Account Alerts
+    static let invalidForm      = APAlertItem(title: Text("Invalid Form"),
+                                            message: Text("Please ensure all fields in the form have been filled out."),
+                                            dismissButton: .default(Text("OK")))
+    
+    static let invalidEmail     = APAlertItem(title: Text("Invalid Email"),
+                                            message: Text("Please ensure your email is correct."),
+                                            dismissButton: .default(Text("OK")))
+    
+    static let userSaveSuccess  = APAlertItem(title: Text("Profile Saved"),
+                                            message: Text("Your profile information was successfully saved."),
+                                            dismissButton: .default(Text("OK")))
+    
+    static let invalidUserData  = APAlertItem(title: Text("Profile Error"),
+                                            message: Text("There was an error saving or retrieving your profile."),
+                                            dismissButton: .default(Text("OK")))
     
 }
 

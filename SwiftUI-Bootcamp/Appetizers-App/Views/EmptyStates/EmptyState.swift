@@ -8,11 +8,34 @@
 import SwiftUI
 
 struct EmptyState: View {
+    
+    let image: ImageResource
+    let message: String
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        ZStack{
+            Color(.systemBackground)
+                .ignoresSafeArea()
+            
+            VStack{
+                Image(image)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(height: 150)
+                
+                Text(message)
+                    .font(.title3)
+                    .multilineTextAlignment(.center)
+                    .foregroundStyle(.secondary)
+                    .padding()
+                
+            }
+            .offset(y: -52)
+        }
     }
 }
 
 #Preview {
-    EmptyState()
+    EmptyState(image: .emptyOrder, message: "Example text message")
 }

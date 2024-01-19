@@ -27,10 +27,21 @@ struct AppetizerResponse: Decodable {
 struct MockDataAppetizer{
     static let sampleAppetizer = Appetizer(id: 1, name: "Asian Flank Steak", description: "This perfectly thin cut just melts in your mouth.", price: 9.08, imageURL: "https://seanallen-course-backend.herokuapp.com/images/appetizers/asian-flank-steak.jpg", calories: 300, protein: 14, carbs: 0)
     
-    static let appetizers = AppetizerResponse (request: [
-      sampleAppetizer, sampleAppetizer, sampleAppetizer,sampleAppetizer, sampleAppetizer
+    static let appetizers = [
+        sampleAppetizer, sampleAppetizer, sampleAppetizer,sampleAppetizer, sampleAppetizer
     ]
-    )
+    
+    
+    static let orderItem1 = Appetizer(id: 1, name: "Asian Flank Steak", description: "This perfectly thin cut just melts in your mouth.", price: 9.08, imageURL: "https://seanallen-course-backend.herokuapp.com/images/appetizers/asian-flank-steak.jpg", calories: 300, protein: 14, carbs: 0)
+    
+    static let orderItem2 = Appetizer(id: 2, name: "Asian Flank Steak", description: "This perfectly thin cut just melts in your mouth.", price: 9.08, imageURL: "https://seanallen-course-backend.herokuapp.com/images/appetizers/asian-flank-steak.jpg", calories: 300, protein: 14, carbs: 0)
+    
+    static let orderItem3 = Appetizer(id: 3, name: "Asian Flank Steak", description: "This perfectly thin cut just melts in your mouth.", price: 9.08, imageURL: "https://seanallen-course-backend.herokuapp.com/images/appetizers/asian-flank-steak.jpg", calories: 300, protein: 14, carbs: 0)
+    
+    static let orderItems  =  [
+        orderItem1, orderItem2, orderItem3
+    ]
+    
     
 }
 

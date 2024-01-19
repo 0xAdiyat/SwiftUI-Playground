@@ -29,7 +29,6 @@ struct XDismissButtonAP: View {
             }
             
         }
-        .padding()
     }
 }
 

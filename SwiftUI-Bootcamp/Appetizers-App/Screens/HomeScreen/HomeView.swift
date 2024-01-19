@@ -15,11 +15,13 @@ struct HomeView: View {
         ZStack{
             NavigationStack{
                 List(appetizerListViewModel.appetizers) { appetizer in
-                    AppetizerListCell(appetizer: appetizer)
-                        .onTapGesture {
-                            appetizerListViewModel.selectedAppetizer = appetizer
-                            appetizerListViewModel.isShowingDetail = true
-                        }
+                    if !appetizerListViewModel.isLoading{
+                        AppetizerListCell(appetizer: appetizer)
+                            .onTapGesture {
+                                appetizerListViewModel.selectedAppetizer = appetizer
+                                appetizerListViewModel.isShowingDetail = true
+                            }
+                    }
                 }
                 .navigationTitle("🍟 Appetizers")
                 .disabled(appetizerListViewModel.isShowingDetail)
@@ -29,7 +31,7 @@ struct HomeView: View {
                 appetizerListViewModel.getAppetizers()
             }
             .blur(radius: appetizerListViewModel.isShowingDetail ? 20 : 0)
-            
+
             if appetizerListViewModel.isShowingDetail{
                 AppetizerDetailsView(appetizer: appetizerListViewModel.selectedAppetizer ?? MockDataAppetizer.sampleAppetizer, isShowingDetailsScreen: $appetizerListViewModel.isShowingDetail)
             }
@@ -38,7 +40,7 @@ struct HomeView: View {
                 LoadingView()
             }
             
-            if appetizerListViewModel.appetizers.isEmpty{
+            if appetizerListViewModel.appetizers.isEmpty && !appetizerListViewModel.isLoading{
                 VStack{
                     Image(.foodPlaceholder)
                         .resizable()
@@ -57,7 +59,10 @@ struct HomeView: View {
         }
         .alert(item: $appetizerListViewModel.alertItem) { item in
             Alert(title: item.title, message: item.message, dismissButton: item.dismissButton)
+              
         }
+        .transition(.opacity)
+        .animation(.easeInOut(duration: 0.5), value: UUID())
     }
     
 

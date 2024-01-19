@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct SwiftUI_BootcampApp: App {
+    // MARK - this part of the code is related to [Appetizer-App] only
+    var order = Order()
+    
     var body: some Scene {
         WindowGroup {
-            AppetizerTabView()
+            AppetizerTabView().environmentObject(order)
 //            BarcodeScannerView()
 //            FrameworkList()
 //            FrameworkGridView()
