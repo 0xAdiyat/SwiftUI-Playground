@@ -10,6 +10,9 @@ import SwiftUI
 struct AccountView: View {
     
     @StateObject private var viewModel = AccountViewModel()
+    @FocusState  var focusedTextField: FormTextField?
+    
+  
     
     var body: some View {
         NavigationStack{
@@ -18,11 +21,29 @@ struct AccountView: View {
                 Section {
                     
                     TextField("First Name", text: $viewModel.user.firstName)
+                        .focused($focusedTextField, equals: .firstName)
+                        .onSubmit {
+                            focusedTextField = .lastName
+                        }
+                        .submitLabel(.next)
+                    
                     TextField("Last Name", text: $viewModel.user.lastName)
+                        .focused($focusedTextField, equals: .lastName)
+                        .onSubmit {
+                            focusedTextField = .email
+                        }
+                        .submitLabel(.next)
+
                     TextField("E-mail", text: $viewModel.user.email)
+                        .focused($focusedTextField, equals: .email)
+                        .onSubmit {
+                            focusedTextField = nil
+                        }
+                        .submitLabel(.continue)
                         .keyboardType(.emailAddress)
                         .textInputAutocapitalization(.never)
                         .autocorrectionDisabled()
+                    
                     DatePicker("Date of Birth", selection: $viewModel.user.birthDate, displayedComponents: .date)
                     
                     Button{
@@ -51,6 +72,13 @@ struct AccountView: View {
                 
             }
             .navigationTitle("Account")
+            .toolbar{
+                ToolbarItemGroup(placement:.keyboard){
+                    Button("Dismiss"){
+                        focusedTextField = nil
+                    }
+                }
+            }
             
         }
         .onAppear{

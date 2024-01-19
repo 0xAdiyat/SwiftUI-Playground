@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-final class AppetizerListViewModel: ObservableObject{
+@MainActor final class AppetizerListViewModel: ObservableObject{
     
     @Published var alertItem: APAlertItem?
     
@@ -19,32 +19,63 @@ final class AppetizerListViewModel: ObservableObject{
     
     @Published var selectedAppetizer: Appetizer?
     
-    func getAppetizers(){
+    //    func getAppetizers(){
+    //        isLoading = true
+    //        NetworkManager.shared.getAppetizers { result in
+    //            DispatchQueue.main.async{ [self] in
+    //                isLoading = false
+    //                switch result {
+    //                    case let .success(appetizers):
+    //                        self.appetizers = appetizers
+    //
+    //                    case let .failure(err):
+    //                        switch err{
+    //
+    //                            case .invalidURL:
+    //                                alertItem = APAlertContext.invalidURL
+    //
+    //                            case .invalidResponse:
+    //                                alertItem = APAlertContext.invalidResponse
+    //                            case .invalidData:
+    //                                alertItem = APAlertContext.invalidData
+    //                            case .unableToComplete:
+    //                                alertItem = APAlertContext.unableToComplete
+    //                        }
+    //
+    //                }
+    //            }
+    //        }
+    //    }
+    
+    
+    /// Approach 2 - Async/Await network calls
+    func getAppetizers() async{
         isLoading = true
-        NetworkManager.shared.getAppetizers { result in
-            DispatchQueue.main.async{ [self] in
+//        Task {
+            do{
+                appetizers = try await NetworkManager.shared.getAppetizers()
                 isLoading = false
-                switch result {
-                    case let .success(appetizers):
-                        self.appetizers = appetizers
-                        
-                    case let .failure(err):
-                        switch err{
-                                
-                            case .invalidURL:
-                                alertItem = APAlertContext.invalidURL
-                            
-                            case .invalidResponse:
-                                alertItem = APAlertContext.invalidResponse
-                            case .invalidData:
-                                alertItem = APAlertContext.invalidData
-                            case .unableToComplete:
-                                alertItem = APAlertContext.unableToComplete
-                        }
+            }catch{
+                if let apError = error as? APError{
+                    switch apError{
+                        case .invalidURL:
+                            alertItem = APAlertContext.invalidURL
+                        case .invalidResponse:
+                            alertItem = APAlertContext.invalidResponse
+                        case .invalidData:
+                            alertItem = APAlertContext.invalidData
+                        case .unableToComplete:
+                            alertItem = APAlertContext.unableToComplete
+                    }
+                }else{
+                    alertItem = APAlertContext.invalidResponse
 
                 }
+                isLoading = false
             }
-        }
+            
+//        }
+            
     }
-
+    
 }

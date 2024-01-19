@@ -49,7 +49,7 @@ struct AppetizerListCell: View {
 //            .frame(width: 120, height: 90, alignment: .center)
 //            .cornerRadius(8)
             
-            /// Another way of doing it
+            /// Another way of doing it: The caching method
             AppetizerRemoteImage(urlString: appetizer.imageURL)
             .aspectRatio(contentMode: .fit)
                        .frame(width: 120, height: 90, alignment: .center)

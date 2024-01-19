@@ -17,6 +17,8 @@ struct HomeView: View {
                 List(appetizerListViewModel.appetizers) { appetizer in
                     if !appetizerListViewModel.isLoading{
                         AppetizerListCell(appetizer: appetizer)
+//                            .listRowSeparator(.hidden)
+//                            .listRowSeparatorTint(.appetizersAccent)
                             .onTapGesture {
                                 appetizerListViewModel.selectedAppetizer = appetizer
                                 appetizerListViewModel.isShowingDetail = true
@@ -27,8 +29,11 @@ struct HomeView: View {
                 .disabled(appetizerListViewModel.isShowingDetail)
                 
             }
-            .onAppear{
-                appetizerListViewModel.getAppetizers()
+//            .onAppear{
+//                appetizerListViewModel.getAppetizers()
+//            }
+            .task {
+                await appetizerListViewModel.getAppetizers()
             }
             .blur(radius: appetizerListViewModel.isShowingDetail ? 20 : 0)
 

@@ -5,4 +5,8 @@
 //  Created by Ahsaf Hussain Adiyat on 19/1/24.
 //
 
-import Foundation
+import SwiftUI
+
+enum FormTextField{
+    case firstName, lastName, email
+}

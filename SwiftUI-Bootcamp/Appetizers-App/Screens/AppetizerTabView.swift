@@ -8,28 +8,36 @@
 import SwiftUI
 
 struct AppetizerTabView: View {
+//    var orderEnv = Order() // required to place it here in order to enable preview. Otherwise it will crash
+    
+    @EnvironmentObject var order: Order
+
     var body: some View {
         TabView{
+
             HomeView()
                 .tabItem {
-                    Image(systemName: "house")
-                    Text("Home")
+//                    Image(systemName: "house")
+//                    Text("Home")
+                    Label("Home",systemImage: "house")
                 }
             
             AccountView()
                 .tabItem {
-                    Image(systemName: "person")
-                    Text("Account")
+                    Label("Account",systemImage: "person")
+
                 }
             
             OrderView()
                 .tabItem {
-                    Image(systemName: "bag")
-                    Text("Order")
+                    Label("Order",systemImage: "bag")
                 }
+                .badge(order.items.count)
+
             
         }
         .tint(.appetizersAccent)
+//        .environmentObject(orderEnv) // required to place it here in order to enable preview. Otherwise the preview will crash
 
     }
 }

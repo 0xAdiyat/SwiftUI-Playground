@@ -44,8 +44,15 @@ struct AppetizerDetailsView: View {
                 isShowingDetailsScreen = false
                 
             }label: {
-                APButton(title:"$\(appetizer.price, specifier: "%.2f") - Add to cart")
+//                APButton(title:"$\(appetizer.price, specifier: "%.2f") - Add to cart")
+                Text("$\(appetizer.price, specifier: "%.2f") - Add to cart")
+                
             }
+//            .buttonStyle(.bordered)
+//            .controlSize(.large)
+//            .tint(.appetizersAccent)
+            .modifier(StandardButtonStyle())
+//                    .standardButtonStyle() // you could also do
             .padding(.bottom, 32)
         }
         .frame(width: 300, height: 524)
