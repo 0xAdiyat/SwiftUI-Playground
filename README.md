@@ -21,7 +21,7 @@ Light Mode | Dark Mode
 ### 2. APPETIZER - GROCERY APP
 
 #### Screenshots
-![Appetizers - Thumbnail](https://github.com/0xAdiyat/SwiftUI-Playground/assets/67780459/085fe579-7b17-4fb9-a18c-b3ba7c7243ca)
+![Appetizers - Thumbnail](https://github.com/0xAdiyat/SwiftUI-Playground/assets/67780459/108f73a2-4421-4282-9c19-18c5c1eae0d0)
 
 
 
