@@ -7,7 +7,7 @@
 ### 1. THE WEATHER - APP
 
 #### Description
-A simple yet beautiful weather app UI with animations. This was the very first app I worked on. Except for having some animations nothing special xD.
+A simple yet beautiful weather app UI with animations. This was the very first app I worked on, except for having some animations nothing special xD.
 
 #### Preview
 https://github.com/0xAdiyat/SwiftUI-Playground/assets/67780459/fdac9c10-70bb-4dd1-be3d-3834ca51b615
@@ -20,28 +20,20 @@ Light Mode | Dark Mode
 
 ### 2. APPETIZER - GROCERY APP
 
-#### Description
-Coming Soon...
-
 #### Screenshots
-Coming Soon...
+![Appetizers - Thumbnail](https://github.com/0xAdiyat/SwiftUI-Playground/assets/67780459/085fe579-7b17-4fb9-a18c-b3ba7c7243ca)
+
 
 
 ### 3. BARCODE SCANNER - APP
+I learned to use UIViewRepresentable to connect SwiftUI and UIKit in case SwiftUI doesn't support the type of user interface I want.
 
-#### Description
-Coming Soon...
-
-#### Screenshots
-Coming Soon...
 
 ### 4. APPLE ARCHITECTURE - APP
 
-#### Description
-Coming Soon...
-
 #### Screenshots
-Coming Soon...
+![Apple Frameworks - Thumbnail](https://github.com/0xAdiyat/SwiftUI-Playground/assets/67780459/af00b824-0e42-49ef-bde9-c450e5ed3257)
+
 
 
 #### Getting Started
