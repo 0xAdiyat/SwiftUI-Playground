@@ -49,6 +49,7 @@
 		51914B442B5A8BDF006B05D9 /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51914B432B5A8BDF006B05D9 /* CustomModifiers.swift */; };
 		51914B462B5A8F6E006B05D9 /* FormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51914B452B5A8F6E006B05D9 /* FormTextField.swift */; };
 		51914B492B5ADD2E006B05D9 /* FrameworkDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51914B482B5ADD2E006B05D9 /* FrameworkDetailViewModel.swift */; };
+		51C2523B2B7227F300E94F89 /* Fhixa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C2523A2B7227F300E94F89 /* Fhixa.swift */; };
 		51CA7A3D2B542C1A00C06421 /* OffsetReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CA7A3C2B542C1A00C06421 /* OffsetReader.swift */; };
 		51CBF1482B53F03B00E66CC9 /* WeatherButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CBF1472B53F03B00E66CC9 /* WeatherButton.swift */; };
 		51CBF14C2B5426BB00E66CC9 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CBF14B2B5426BB00E66CC9 /* WeatherView.swift */; };
@@ -123,6 +124,7 @@
 		51914B432B5A8BDF006B05D9 /* CustomModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifiers.swift; sourceTree = "<group>"; };
 		51914B452B5A8F6E006B05D9 /* FormTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextField.swift; sourceTree = "<group>"; };
 		51914B482B5ADD2E006B05D9 /* FrameworkDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailViewModel.swift; sourceTree = "<group>"; };
+		51C2523A2B7227F300E94F89 /* Fhixa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fhixa.swift; sourceTree = "<group>"; };
 		51CA7A3C2B542C1A00C06421 /* OffsetReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetReader.swift; sourceTree = "<group>"; };
 		51CBF1472B53F03B00E66CC9 /* WeatherButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherButton.swift; sourceTree = "<group>"; };
 		51CBF14B2B5426BB00E66CC9 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
@@ -516,6 +518,14 @@
 			path = VIewModel;
 			sourceTree = "<group>";
 		};
+		51C252392B7227E400E94F89 /* TeamInfo-App */ = {
+			isa = PBXGroup;
+			children = (
+				51C2523A2B7227F300E94F89 /* Fhixa.swift */,
+			);
+			path = "TeamInfo-App";
+			sourceTree = "<group>";
+		};
 		51CA7A3B2B542C0800C06421 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -565,6 +575,7 @@
 		51FBF0012B52BDDF00F6B5FE /* SwiftUI-Bootcamp */ = {
 			isa = PBXGroup;
 			children = (
+				51C252392B7227E400E94F89 /* TeamInfo-App */,
 				512623C02B57C09F00009B5F /* Appetizers-App */,
 				517CD5B52B56A7970004E0B8 /* BarcodeScanner-App */,
 				511D63E52B55791B00E16CF9 /* Apple-Frameworks-App */,
@@ -758,6 +769,7 @@
 				51914B292B591263006B05D9 /* LoadingView.swift in Sources */,
 				51914B122B5813E3006B05D9 /* AppetizerListCell.swift in Sources */,
 				517CD5AE2B567A150004E0B8 /* FrameworkList.swift in Sources */,
+				51C2523B2B7227F300E94F89 /* Fhixa.swift in Sources */,
 				511D63EB2B5579B200E16CF9 /* Framework.swift in Sources */,
 				51FBF0032B52BDDF00F6B5FE /* SwiftUI_BootcampApp.swift in Sources */,
 				51914B392B595ED5006B05D9 /* String+Ext.swift in Sources */,
